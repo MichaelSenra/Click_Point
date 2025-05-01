@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Click Rápido!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🔥 Jogo de Clique Rápido</h1>
+
+  <div id="controls">
+    <label for="difficulty">Dificuldade:</label>
+    <select id="difficulty">
+      <option value="easy">Fácil</option>
+      <option value="medium">Médio</option>
+      <option value="hard">Difícil</option>
+    </select>
+    <button onclick="startGame()">Iniciar</button>
+  </div>
+
+  <div id="gameArea"></div>
+
+  <div id="info">
+    <p>⏱️ Tempo restante: <span id="timeLeft">--</span> s</p>
+    <p>⚡ Tempo de reação: <span id="reactionTime">--</span> ms</p>
+    <p>🏆 Recorde: <span id="bestTime">--</span> ms</p>
+    <p>✅ Cliques certos: <span id="clickCount">0</span></p>
+  </div>
+
+  <div id="summary">
+    <h2>🏁 Fim de Jogo</h2>
+    <p>Total de cliques: <span id="finalClicks">0</span></p>
+    <p>Melhor tempo de reação: <span id="finalBest">--</span> ms</p>
+    <button onclick="startGame()">Jogar Novamente</button>
+  </div>
+
+  <audio id="clickSound" src="https://www.soundjay.com/button/sounds/button-16.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

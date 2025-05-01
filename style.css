@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: #38bdf8;
+}
+
+#controls, #info {
+  margin: 20px auto;
+}
+
+#controls select, button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  margin: 5px;
+  transition: all 0.2s ease;
+}
+
+select {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+button {
+  background-color: #38bdf8;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+#gameArea {
+  width: 90vw;
+  height: 60vh;
+  margin: 0 auto;
+  background-color: #1e293b;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+  box-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+.circle:active {
+  transform: scale(0.9);
+}
+
+#info p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+#summary {
+  display: none;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: 0 0 12px rgba(255,255,255,0.1);
+}
+
+#summary h2 {
+  color: #facc15;
+}
+
+audio {
+  display: none;
+}
